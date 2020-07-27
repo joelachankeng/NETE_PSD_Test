@@ -1,0 +1,32 @@
+footer {
+    &.main-footer {
+        background-color: #E2E2E2;
+        .footer-menu {
+            li {
+                a {
+                    @include underline-hover();
+                    color: #5d5d5d;
+                    text-decoration: none;
+                    &:after {
+                        content: '|';
+                        padding: 0 5px;
+                    }
+                }
+                &:last-child {
+                a{
+                        &:after {
+                            content: none;
+                        }
+                    }
+                }
+            }
+        }
+        p {
+            color: #5d5d5d;
+        }
+        .footer-logo {
+            max-height: 80px;
+            width: auto;
+        }
+    }
+}

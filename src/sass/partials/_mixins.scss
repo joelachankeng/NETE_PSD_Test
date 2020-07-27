@@ -1,0 +1,23 @@
+@mixin background-cover() {
+    background-size: cover;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+@mixin underline-hover() {
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+@mixin bottom-hr($color: $black) {
+    &:after {
+        content: '';
+        display: block;
+        margin: 10px 0;
+        background-color: $color;
+        height: 5px;
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,49 @@
+header {
+    &.main-header {
+        &:before {
+            content: '';
+            display: block;
+            background-color: $black;
+            height: 15px;
+        }
+        .container {
+            .site-logo {
+                margin-right: 100px;
+                img {
+                    max-height: 200px;
+                    width: auto;
+                }
+                @media screen and (max-width: 1024px) {
+                    margin-right: 20px;
+                }
+                @media screen and (max-width: 768px) {  
+                    margin: 0;
+                }
+            }
+            .site-navigation {
+                .header-email {
+                    top: 0;
+                    right: 0;
+                    a {
+                        color: #999898;
+                        @include underline-hover();
+                    }
+                }
+                .main-menu {
+                    list-style: none;
+                    li {
+                        margin: 0 10px;
+                        a {
+                            font-weight: 700;
+                            color: $black;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            @include underline-hover();
+                            padding-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
